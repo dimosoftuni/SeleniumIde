@@ -12,6 +12,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 [TestFixture]
+// Some comment
 public class TC01IfUserIsInvalidTryAgainTest
 {
     private IWebDriver driver;
