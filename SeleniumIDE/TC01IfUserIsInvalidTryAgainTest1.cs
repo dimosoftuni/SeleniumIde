@@ -12,6 +12,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 [TestFixture]
+// Some comment
 public class TC01IfUserIsInvalidTryAgainTest
 {
     private IWebDriver driver;
@@ -48,7 +49,7 @@ public class TC01IfUserIsInvalidTryAgainTest
         // 3 | click | css=*[data-test="username"] | 
         driver.FindElement(By.CssSelector("*[data-test=\"username\"]")).Click();
         // 4 | type | css=*[data-test="username"] | user123
-        driver.FindElement(By.CssSelector("*[data-test=\"username\"]")).SendKeys("user123");
+        driver.FindElement(By.CssSelector("*[data-test=\"alabala\"]")).SendKeys("user1234");
         // 5 | click | css=*[data-test="password"] | 
         driver.FindElement(By.CssSelector("*[data-test=\"password\"]")).Click();
         // 6 | click | css=*[data-test="login-password"] | 
